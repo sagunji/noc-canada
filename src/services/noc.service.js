@@ -26,6 +26,11 @@ class NocService {
     }
   }
 
+  removeSearchableText(noc) {
+    const { searchableText, ...nocWithoutSearchableText } = noc;
+    return nocWithoutSearchableText;
+  }
+
   async getNocs(page = 1, limit = 20, search = "") {
     await this.initialize();
 
@@ -39,18 +44,18 @@ class NocService {
 
     const startIndex = (page - 1) * limit;
     const endIndex = page * limit;
-    const totalPages = Math.ceil(filteredNocs.length / limit);
+
+    const cleanedNocs = filteredNocs
+      .slice(startIndex, endIndex)
+      .map((noc) => this.removeSearchableText(noc));
 
     return {
       metadata: {
-        total: filteredNocs.length,
+        total: cleanedNocs.length,
         page,
         limit,
-        total_pages: totalPages,
-        has_next: page < totalPages,
-        has_previous: page > 1,
       },
-      data: filteredNocs.slice(startIndex, endIndex),
+      data: cleanedNocs,
     };
   }
 

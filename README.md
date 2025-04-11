@@ -211,9 +211,6 @@ npm run dev
 
 # Start production server
 npm start
-
-# Run tests
-npm test
 ```
 
 ## 📊 Data Source

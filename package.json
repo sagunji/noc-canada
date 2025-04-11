@@ -1,13 +1,12 @@
 {
   "name": "noc-canada",
   "version": "1.0.0",
-  "description": "",
+  "description": "API for searching and retrieving NOC (National Occupational Classification) codes",
   "main": "index.js",
   "scripts": {
     "generate-data": "node src/scripts/generateNocData.js",
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "",

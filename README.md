@@ -2,6 +2,9 @@
 
 A RESTful API service that provides access to Canada's National Occupational Classification (NOC) 2021 Version 1.0 data. This service allows users to search, browse, and retrieve detailed information about NOC codes and their classifications.
 
+🌎 https://noc-canada.onrender.com/api/
+📖 https://noc-canada.onrender.com/api/docs/
+
 ## 📖 Table of Contents
 
 - [NOC (National Occupational Classification) API](#noc-national-occupational-classification-api)

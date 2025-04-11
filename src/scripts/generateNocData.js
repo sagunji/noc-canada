@@ -17,6 +17,25 @@ const baseUrl =
   "https://www23.statcan.gc.ca/imdb/p3VD.pl?Function=getVD&TVD=1322554&CVD=1322870&CPV=";
 const urlSuffix = "&CST=01052021&CLV=5&MLV=5";
 
+function getTeerInfo(nocCode) {
+  const teerDigit = String(nocCode).padStart(5, "0")[1];
+  const teerMap = {
+    0: { level: 0, title: "TEER 0 - Management occupations" },
+    1: { level: 1, title: "TEER 1 - University degree" },
+    2: {
+      level: 2,
+      title: "TEER 2 - College diploma (2+ years) or apprenticeship",
+    },
+    3: {
+      level: 3,
+      title: "TEER 3 - College diploma (<2 years) or apprenticeship",
+    },
+    4: { level: 4, title: "TEER 4 - High school diploma" },
+    5: { level: 5, title: "TEER 5 - Short work demonstration or none" },
+  };
+  return teerMap[teerDigit] || { level: -1, title: "Unknown TEER level" };
+}
+
 async function generateNocData() {
   return new Promise((resolve, reject) => {
     const results = [];
@@ -57,10 +76,10 @@ async function generateNocData() {
 
           const entry = {
             noc_code: code,
-            level,
             title,
             description: definition,
             link: `${baseUrl}${code}${urlSuffix}`,
+            teer: getTeerInfo(code),
             hierarchy: {
               broad_group: {
                 code: broadGroup,

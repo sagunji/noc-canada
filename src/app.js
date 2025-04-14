@@ -18,13 +18,39 @@ const swaggerOptions = {
       version: "1.0.0",
       description:
         "API for searching and retrieving NOC (National Occupational Classification) codes",
+      contact: {
+        name: "API Support",
+        url: "https://github.com/yourusername/noc-canada",
+      },
+      license: {
+        name: "MIT",
+        url: "https://opensource.org/licenses/MIT",
+      },
     },
   },
   apis: ["./src/routes/*.js"],
 };
 
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
-app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+
+const swaggerUiOptions = {
+  explorer: true,
+  customCss: ".swagger-ui .topbar { display: none }",
+  customSiteTitle: "NOC Code API Documentation",
+  customfavIcon: "/assets/favicon.ico",
+  swaggerOptions: {
+    persistAuthorization: true,
+    displayRequestDuration: true,
+    docExpansion: "list",
+    tryItOutEnabled: true,
+  },
+};
+
+app.use(
+  "/api/docs",
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerDocs, swaggerUiOptions)
+);
 
 app.use("/api", nocRoutes);
 

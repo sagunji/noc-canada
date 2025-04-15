@@ -1,0 +1,42 @@
+{
+  "name": "@canoeh/nocs",
+  "version": "0.1.0",
+  "description": "Canadian National Occupational Classification (NOC) data and utilities",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "data"
+  ],
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  },
+  "scripts": {
+    "publish": "npm publish --access public",
+    "test": "echo 'No tests yet'"
+  },
+  "keywords": [
+    "noc",
+    "canada",
+    "occupation",
+    "classification",
+    "employment",
+    "job",
+    "career"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagunji/noc-canada.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sagunji/noc-canada/issues"
+  },
+  "homepage": "https://github.com/sagunji/noc-canada#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

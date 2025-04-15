@@ -1,6 +1,6 @@
 {
   "name": "@canoeh/nocs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Canadian National Occupational Classification (NOC) data and utilities",
   "type": "module",
   "main": "src/index.js",

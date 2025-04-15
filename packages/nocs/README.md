@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://gist.githubusercontent.com/sagunji/8c0138a7af3e4cb16059261c1a8be691/raw/d26d6d84abdbd1277747565b574f252fa9ab63c0/canoeh.svg" alt="Canada NOCs Logo" height="120"/>
+</p>
+
 # @canoeh/nocs
 
 A simple package to work with Canadian National Occupational Classification (NOC) codes.

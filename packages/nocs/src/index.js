@@ -1,4 +1,8 @@
-import nocData from "../data/noc.json" assert { type: "json" };
+import { readFileSync } from "fs";
+
+const nocData = JSON.parse(
+  readFileSync(new URL("../data/noc.json", import.meta.url))
+);
 
 /**
  * Get NOC data by code

@@ -1,6 +1,6 @@
 {
   "name": "@canoeh/nocs",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Canadian National Occupational Classification (NOC) data and utilities",
   "type": "module",
   "main": "src/index.js",
@@ -38,5 +38,6 @@
   "homepage": "https://github.com/sagunji/noc-canada#readme",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "types": "index.d.ts"
 }

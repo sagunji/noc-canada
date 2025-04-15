@@ -126,7 +126,7 @@ pnpm install
 
 ## Data Source
 
-The NOC data is sourced from [Statistics Canada](https://www.statcan.gc.ca/en/subjects/standard/noc/2021/index) and is provided under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada).
+The NOC data is sourced from [Statistics Canada](https://www.statcan.gc.ca/en/subjects/standard/noc/2021/indexV1) and is provided under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada).
 
 ## License
 

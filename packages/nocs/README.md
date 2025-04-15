@@ -50,7 +50,7 @@ Returns an array of NOC objects that match the search query. The search is perfo
 
 ## Data Source
 
-The data is sourced from [Statistics Canada](https://www.statcan.gc.ca/en/start) and is provided under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada).
+The data is sourced from [Statistics Canada](https://www.statcan.gc.ca/en/subjects/standard/noc/2021/indexV1) and is provided under the [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada).
 
 ## License
 

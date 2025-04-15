@@ -1,6 +1,6 @@
 {
   "name": "@canoeh/nocs",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Canadian National Occupational Classification (NOC) data and utilities",
   "type": "module",
   "main": "src/index.js",
@@ -26,7 +26,7 @@
     "job",
     "career"
   ],
-  "author": "Your Name",
+  "author": "Sagun Karanjit",
   "license": "MIT",
   "repository": {
     "type": "git",

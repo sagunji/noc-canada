@@ -2,6 +2,9 @@
 
 A monorepo containing packages for working with Canadian National Occupational Classification (NOC) data.
 
+💽 https://noc-canada.onrender.com/api
+🗂️ https://noc-canada.onrender.com/api-docs/
+
 ## Packages
 
 ### @canoeh/nocs

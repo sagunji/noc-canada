@@ -1,4 +1,4 @@
-name = "noc-canada-api"
+name = "noc-canada"
 main = "dist/worker.js"
 compatibility_date = "2024-01-01"
 
@@ -6,4 +6,4 @@ compatibility_date = "2024-01-01"
 command = "pnpm build"
 
 [env.production]
-name = "noc-canada-api-prod"
+name = "noc-canada-prod"

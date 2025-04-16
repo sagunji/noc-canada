@@ -53,7 +53,7 @@ pnpm install
 
 # Start the API server
 cd apps/noc-api
-pnpm start
+pnpm dev
 ```
 
 The API will be available at `http://localhost:3000`.
@@ -78,7 +78,7 @@ Swagger documentation is available at `http://localhost:3000/api-docs`.
   - Parameters:
     - `code`: NOC code (e.g., "00010")
 
-- `GET /api/nocs/metadata`
+- `GET /api/metadata`
   - Get NOC system metadata
   - Returns version, source, and statistics
 

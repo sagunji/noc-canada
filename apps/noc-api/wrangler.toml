@@ -1,0 +1,9 @@
+name = "noc-canada"
+main = "dist/worker.js"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "pnpm build"
+
+[env.production]
+name = "noc-canada-prod"

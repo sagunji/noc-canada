@@ -8,12 +8,22 @@ const app = new Hono();
 app.use("*", cors());
 
 // Routes
-app.get("/api/nocs/metadata", async (c) => {
+app.get("/", async (c) => {
+  return c.json({
+    author: "Sagun Karanjit",
+    github: "https://github.com/sagunji/noc-canada",
+    pkg: "https://www.npmjs.com/package/@canoeh/nocs",
+  });
+});
+
+app.get("/metadata", async (c) => {
   return c.json({
     version: "2021 Version 1.0",
     source: "Statistics Canada",
     totalEntries: (await getAllNOCs()).length,
     lastUpdated: "2021-11-16",
+    github: "https://github.com/sagunji/noc-canada",
+    pkg: "https://www.npmjs.com/package/@canoeh/nocs",
   });
 });
 

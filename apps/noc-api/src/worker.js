@@ -51,4 +51,7 @@ app.get("/api/nocs", async (c) => {
   });
 });
 
-export default app;
+// Export the fetch handler for Cloudflare Workers
+export default {
+  fetch: app.fetch,
+};

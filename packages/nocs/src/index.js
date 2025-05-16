@@ -49,3 +49,24 @@ export function getMetadata() {
 export function getTotalNOCs() {
   return nocData.length;
 }
+
+/**
+ * Get popular NOCs
+ * @returns {Array} Array of popular NOCs
+ */
+export function getPopularNOCs() {
+  const inDemandNOCs = [
+    "21232",
+    "31301",
+    "70010",
+    "75101",
+    "72106",
+    "73300",
+    "73301",
+    "11202",
+    "64409",
+    "12200",
+  ];
+  return inDemandNOCs.map((noc) => getNOCByCode(noc));
+}
+

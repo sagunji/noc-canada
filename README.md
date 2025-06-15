@@ -1,10 +1,10 @@
-<p align="center">
-  <img src="https://gist.githubusercontent.com/sagunji/8c0138a7af3e4cb16059261c1a8be691/raw/d26d6d84abdbd1277747565b574f252fa9ab63c0/canoeh.svg" alt="Canada NOCs Logo" height="120"/>
-</p>
-
 # Canada NOCs Monorepo
 
 A monorepo containing packages for working with Canadian National Occupational Classification (NOC) data.
+
+### 🎉 Check out my app to see more Canada immigration related features
+
+[![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/us/app/immime/id6745764350)
 
 ## Packages
 
